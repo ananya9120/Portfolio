@@ -11,7 +11,7 @@ const PcModel=(props)=> {
   const { nodes, materials } = useGLTF('/pc-transformed.glb')
   return (
     <group {...props} dispose={null}>
-      <mesh geometry={nodes.JS_text001_0.geometry} material={materials.PaletteMaterial001} position={[3.767, -2.171, 0.509] } rotation={[-0.01, -0.2, -0.1]} />
+      <mesh geometry={nodes.JS_text001_0.geometry} material={materials.PaletteMaterial001} position={[4, -3, 0.509] } rotation={[-0.01, -0.2, -0.1]} />
     </group>
   )
 }
