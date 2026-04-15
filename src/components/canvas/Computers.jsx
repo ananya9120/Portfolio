@@ -38,8 +38,8 @@ const ComputersCanvas = () => {
           autoRotate                // Enable the automatic spin
           autoRotateSpeed={0.5}     // Set the spin speed
           enableZoom={false}        // Keep zoom disabled
-          maxPolarAngle={Math.PI / 2} 
-          minPolarAngle={Math.PI / 2} 
+          // maxPolarAngle={Math.PI / 2} 
+          // minPolarAngle={Math.PI / 2} 
           target={[0, -1.2, 0]}     // Ensures rotation happens around the P
         />
         <PcModel /> 
