@@ -25,19 +25,22 @@ const ComputersCanvas = () => {
       <pointLight intensity={1} />
 
       {/* 2. Add an Environment for realistic reflections */}
-      <Environment preset="city" />
-      <OrbitControls 
+      {/* <Environment preset="city" /> */}
+      {/* <OrbitControls 
           autoRotate 
           autoRotateSpeed={0.5}
           enableZoom={false} 
           target={[0, -1.2, 0]}
-      />
+      /> */}
 
       <Suspense fallback={null}>
         <OrbitControls 
-          enableZoom={false} 
-          // maxPolarAngle={Math.PI / 2} 
-          // minPolarAngle={Math.PI / 2} 
+          autoRotate                // Enable the automatic spin
+          autoRotateSpeed={0.5}     // Set the spin speed
+          enableZoom={false}        // Keep zoom disabled
+          maxPolarAngle={Math.PI / 2} 
+          minPolarAngle={Math.PI / 2} 
+          target={[0, -1.2, 0]}     // Ensures rotation happens around the P
         />
         <PcModel /> 
       </Suspense>
