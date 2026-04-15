@@ -249,7 +249,7 @@ const projects = [
       },
     ],
     image: portfolio,
-    source_code_link: "https://github.com/ananya9120/Portfolio-Website",
+    source_code_link: "https://github.com/ananya9120/Portfolio",
   },
 ];
 
