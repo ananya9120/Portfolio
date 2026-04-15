@@ -19,24 +19,6 @@ A modern, high-performance 3D portfolio website built with React, Three.js, and 
 - Email Service: EmailJS
 - Build Tool: Vite
 
-## 📦 Installation & Setup
-
-1. Clone the repository:
-   git clone https://github.com/yourusername/portfolio.git
-   cd portfolio
-
-2. Install dependencies:
-   npm install
-
-3. EmailJS Configuration:
-   Update the keys directly in src/components/Contact.jsx:
-   - service_id: Your EmailJS Service ID
-   - template_id: Your EmailJS Template ID
-   - public_key: Your EmailJS Public Key
-
-4. Run the development server:
-   npm run dev
-
 ## 📁 Project Structure
 
 - src/components/canvas: Contains all 3D components (DysonSphere, Stars, etc.)
@@ -53,7 +35,6 @@ A modern, high-performance 3D portfolio website built with React, Three.js, and 
 ## 🤝 Acknowledgments
 
 - Dyson Sphere Model Author: Rafiozo (https://sketchfab.com/Rafiozo)
-- Licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
 
 ---
 Built with 💙 by Ananya
