@@ -6,7 +6,7 @@ import PcModel from './Pc';
 const ComputersCanvas = () => {
   return (
     <Canvas 
-      frameloop='demand' 
+      frameloop='always' 
       shadows 
       camera={{ position: [20, 3, 5], fov: 25 }} 
       gl={{ preserveDrawingBuffer: true }}
