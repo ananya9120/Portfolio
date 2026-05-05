@@ -21,8 +21,7 @@ const Tech = () => {
     <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 place-items-center'>
   {technologies.map((technology) => (
     <div
-      className='w-16 h-16 sm:w-24 sm:h-24 md:w-28 md:h-28 flex flex-col items-center'
-      key={technology.name}
+      className='w-20 h-20 sm:w-28 sm:h-28' key={technology.name}
     >
       {/* Desktop */}
       <div className="hidden sm:block">
@@ -38,7 +37,7 @@ const Tech = () => {
         />
       </div>
 
-      <p className="text-center text-secondary text-[12px] sm:text-[14px] mt-2">
+      <p className="text-center text-secondary text-[14px] mt-2">
         {technology.name}
       </p>
     </div>
