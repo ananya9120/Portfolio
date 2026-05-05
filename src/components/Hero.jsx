@@ -44,12 +44,12 @@ import React from 'react'
 
 const Hero = () => {
   return (
-    <section className="relative w-full h-screen mx-auto bg-[url('/bgr.png')] bg-cover bg-center bg-no-repeat">
+    <section className="relative w-full min-h-screen mx-auto bg-[url('/bgr.png')] bg-cover bg-center bg-no-repeat">
       {/* overlay */}
       <div className="absolute inset-0 bg-black/60 z-0" />
 
       {/* 1. The 3D CANVAS LAYER - Set z-index to 10 so it's "above" the overlay */}
-      <div className="absolute top-[120px] right-0 bottom-0 left-[40vw] z-10">
+      <div className="absolute top-[120px] right-0 bottom-0 w-full md:left-[40vw] md:w-auto z-10">
         <ComputersCanvas />
       </div>
 
