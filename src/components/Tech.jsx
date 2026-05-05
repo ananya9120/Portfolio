@@ -7,32 +7,43 @@ import { technologies } from "../constants";
 
 const Tech = () => {
   return (
-    <>
-      {technologies.map((technology) => (
-        <div
-          className="w-20 h-20 sm:w-28 sm:h-28 flex flex-col items-center"
-          key={technology.name}
-        >
-          {/* Desktop → 3D */}
-          <div className="hidden sm:block">
-            <BallCanvas icon={technology.icon} />
-          </div>
+    // <div className='flex flex-row flex-wrap justify-center gap-10'>
+    //   {technologies.map((technology) => (
+    //     <div className='w-20 h-20 sm:w-28 sm:h-28' key={technology.name}>
+    //       <BallCanvas icon={technology.icon} />
+    //       <p className="text-center text-secondary text-[14px] mt-2">
+    //         {technology.name}
+    //       </p>
+    //     </div>
+    //   ))}
+    // </div>
 
-          {/* Mobile → image */}
-          <div className="sm:hidden">
-            <img
-              src={technology.icon}
-              alt={technology.name}
-              className="w-16 h-16 object-contain"
-            />
-          </div>
+    <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 place-items-center'>
+  {technologies.map((technology) => (
+    <div
+      className='w-16 h-16 sm:w-24 sm:h-24 md:w-28 md:h-28 flex flex-col items-center'
+      key={technology.name}
+    >
+      {/* Desktop */}
+      <div className="hidden sm:block">
+        <BallCanvas icon={technology.icon} />
+      </div>
 
-          <p className="text-center text-secondary text-[14px] mt-2">
-            {technology.name}
-          </p>
-        </div>
-      ))}
-    </>
+      {/* Mobile */}
+      <div className="sm:hidden">
+        <img
+          src={technology.icon}
+          alt={technology.name}
+          className="w-14 h-14 object-contain"
+        />
+      </div>
+
+      <p className="text-center text-secondary text-[12px] sm:text-[14px] mt-2">
+        {technology.name}
+      </p>
+    </div>
+  ))}
+</div>
   )
 }
 
