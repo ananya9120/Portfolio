@@ -18,7 +18,7 @@ const Tech = () => {
     //   ))}
     // </div>
 
-    <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 place-items-center'>
+    <div className='flex flex-row flex-wrap justify-center gap-10'>
   {technologies.map((technology) => (
     <div
       className='w-20 h-20 sm:w-28 sm:h-28' key={technology.name}
